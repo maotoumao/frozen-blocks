@@ -1,0 +1,23 @@
+{
+  "name": "Frozen Blocks",
+  "description": "Reset the blocks to unfreeze your website!",
+  "version": "1.0.0",
+  "manifest_version": 3,
+  "permissions": [
+    "storage",
+    "tabs",
+    "activeTab",
+    "contextMenus",
+    "scripting"
+  ],
+  "host_permissions": [
+    "*://*/*"
+  ],
+  "action": {
+    "default_icon": "favicon.png",
+    "default_title": "来点我一下试试啊"
+  },
+  "background": {
+      "service_worker": "background.js"
+  }
+}
